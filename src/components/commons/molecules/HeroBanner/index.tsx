@@ -1,3 +1,4 @@
+import CardMedium from "../../atoms/CardMedium";
 import CurvedText from "../../atoms/CurvedText";
 
 export default function HeroBanner() {
@@ -15,15 +16,25 @@ export default function HeroBanner() {
         alt="herobanner"
         className="h-full w-full rounded-4xl object-cover"
       />
-      <div className="absolute w-36 h-36 bg-(--bg-secondary-cray) -bottom-20 mx-auto left-0 right-0 rounded-full border-8 border-(--bg-primary-cray) cursor-pointer hover:scale-110 duration-300 transition-transform ease-in-out hover:font-medium flex flex-col items-center justify-center">
-        <div className="relative w-full h-full">
-          <div className="absolute top-2 inset-x-0">{viewText("top")}</div>
+      <div className="absolute bg-(--bg-primary-cray) h-32 w-32 rounded-full -bottom-18 -translate-x-1/2 transform left-1/2"></div>
+      <div className="absolute -bottom-16 left-1/2 flex flex-col items-center justify-center gap-2 rounded-full h-28 w-28 -translate-x-1/2 transform cursor-pointer bg-(--bg-secondary-cray) shadow-xl transition-transform duration-300 ease-in-out hover:scale-105">
+        {viewText("top")}
+        <i className="fa fa-arrow-up mb-2 rotate-45 text-xl text-white"></i>
+        {viewText("bottom")}
+      </div>
 
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <i className="fa-solid fa-arrow-right text-white text-center -rotate-45"></i>
-          </div>
-          <div className="absolute  inset-x-0">{viewText("bottom")}</div>
-        </div>
+      <div className="absolute right-4 bottom-4 flex flex-col gap-4 max-md:bottom-14">
+        <CardMedium
+          title={"About"}
+          bgImg={"/images/dea-afrizal-about.png"}
+          onClick={() => console.log("test click...")}
+        />
+
+        <CardMedium
+          title={"Skills"}
+          bgImg={"/images/dea-afrizal-skills.png"}
+          onClick={() => console.log("test click...")}
+        />
       </div>
     </section>
   );

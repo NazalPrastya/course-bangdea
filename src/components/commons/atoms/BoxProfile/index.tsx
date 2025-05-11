@@ -18,6 +18,3 @@ const BoxProfile = ({ picture, name, onClick }: BoxProfileProps) => {
 };
 
 export default BoxProfile;
-{
-  /* The arrow icon. */
-}

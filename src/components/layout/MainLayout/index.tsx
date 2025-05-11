@@ -6,7 +6,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="relative mx-auto box-border flex min-h-screen w-full max-w-[1444px] flex-col gap-4 overflow-x-hidden">
+    <main className="relative mx-auto box-border flex min-h-screen w-full max-w-[1444px] flex-col overflow-x-hidden p-4 items-start justify-start">
       <Navbar />
       {children}
     </main>

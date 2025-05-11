@@ -13,7 +13,8 @@
   --my-width-nav: calc(100% - 32px);
 }
 
-:root {
+:root,
+#root {
   font-family: var(--font-barlow-condensed);
   color: var(--text-color-black);
   background-color: var(--bg-primary-cray);

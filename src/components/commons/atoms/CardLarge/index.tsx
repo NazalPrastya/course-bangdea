@@ -7,7 +7,7 @@ const CardLarge = ({
 }: {
   img: string;
   text: string;
-  index: string;
+  index: number;
 }) => {
   return (
     <div className="relative flex h-46 w-full justify-between rounded-4xl p-4 shadow-2xl">

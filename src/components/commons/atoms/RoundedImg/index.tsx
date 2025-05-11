@@ -1,4 +1,4 @@
-const RoudedImg = ({
+const RoundedImg = ({
   src,
   index,
   text,
@@ -27,4 +27,4 @@ const RoudedImg = ({
   );
 };
 
-export default RoudedImg;
+export default RoundedImg;
